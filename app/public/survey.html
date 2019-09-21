@@ -18,29 +18,33 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
     <!-- AJAX links -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/chosen/1.5.1/chosen.css">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/chosen/1.5.1/chosen.css"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/css/materialize.min.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/chosen/1.5.1/chosen.jquery.min.js"></script>
 
+    <link rel="stylesheet" type="text/css" href="../../css/style.css"> 
 </head>
 
 <body>
     <div class="container">
-        <h2><center>Suvrvey</center></h2>
+      <div class="surveyBackground card-panel darken-2">
+        <h3><center>Survey</center></h3>
+        <div class="survey darken-2"">
         <p><center>Take a quick survey to find your new best friend! Answers the questions with the numbers 1 through 5. If you disagree with the statement, your answer would be 1. If you agree with a statement, put in a 5.</center></p>
         <hr>
 
-        <h3>About You</h3>
-        <h4>Name (Required)</h4>
+        <h4>About You</h4>
+        <h5>Name (Required)</h5>
         <input type="text" id="name" class="form-control" placeholder="John Doe" required>
-        <h4>Link to Photo Image (Required)</h4>
+        <h5>Link to Photo Image (Required)</h5>
         <input type="text" id="photo" class="form-control" placeholder="Image link" required>    
         <hr>
-
-        <h3><strong>Question 1</strong></h3>
-        <h4>I'm foodie and enjoy trying new restaurants, cafes, bakerys galore!</h4>
-        <!-- make this take up the whole page -->
-        <select class="chosen-select" id="q1">
-          <option value="empty"></option>
+        
+        <div class-"form-group>
+        <h5><strong>Question 1</strong></h5>
+        <h6>I'm foodie and enjoy trying new restaurants, cafes, bakeries galore!</h6>
+        <select class="form-control" id="q1">
+          <option value="empty">Choose an option</option>
           <option value="1">1 (Strongly Disagree)</option>
           <option value="2">2</option>
           <option value="3">3</option>
@@ -48,10 +52,10 @@
           <option value="5">5 (Strongly Agree)</option>
         </select>
 
-        <h3><strong>Question 2</strong></h3>
-        <h4>I consider myself more of a dog person.</h4>
-        <select class="chosen-select" id="q2">
-          <option value="empty"></option>
+        <h5><strong>Question 2</strong></h5>
+        <h6>I consider myself more of a dog person.</h6>
+        <select class="form-control" id="q2">
+          <option value="empty">Choose an option</option>
           <option value="1">1 (Strongly Disagree)</option>
           <option value="2">2</option>
           <option value="3">3</option>
@@ -59,10 +63,10 @@
           <option value="5">5 (Strongly Agree)</option>
         </select>
 
-        <h3><strong>Question 3</strong></h3>
-        <h4>I consider myself an active person and enjoy exercising.</h4>
-        <select class="chosen-select" id="q3">
-          <option value="empty"></option>
+        <h5><strong>Question 3</strong></h5>
+        <h6>I consider myself an active person and enjoy exercising.</h6>
+        <select data-placeholder="" class="form-control" id="q3">
+          <option value="empty">Choose an option</option>
           <option value="1">1 (Strongly Disagree)</option>
           <option value="2">2</option>
           <option value="3">3</option>
@@ -70,10 +74,10 @@
           <option value="5">5 (Strongly Agree)</option>
         </select>
 
-        <h3><strong>Question 4</strong></h3>
-        <h4>I tend to get along with anyone and everyone.</h4>
-        <select class="chosen-select" id="q4">
-          <option value="empty"></option>
+        <h5><strong>Question 4</strong></h5>
+        <h6>I tend to get along with anyone and everyone.</h6>
+        <select class="form-control" id="q4">
+          <option value="empty">Choose an option</option>
           <option value="1">1 (Strongly Disagree)</option>
           <option value="2">2</option>
           <option value="3">3</option>
@@ -81,10 +85,10 @@
           <option value="5">5 (Strongly Agree)</option>
         </select>
 
-        <h3><strong>Question 5</strong></h3>
-        <h4>I do well in quiet, awkward situations.</h4>
-        <select class="chosen-select" id="q5">
-          <option value="empty"></option>
+        <h5><strong>Question 5</strong></h5>
+        <h6>I do well in quiet, awkward situations.</h6>
+        <select class="form-control" id="q5">
+          <option value="empty">Choose an option</option>
           <option value="1">1 (Strongly Disagree)</option>
           <option value="2">2</option>
           <option value="3">3</option>
@@ -92,10 +96,10 @@
           <option value="5">5 (Strongly Agree)</option>
         </select>
 
-        <h3><strong>Question 6</strong></h3>
-        <h4>I prefer a night in over a night out.</h4>
-        <select class="chosen-select" id="q6">
-          <option value="empty"></option>
+        <h5><strong>Question 6</strong></h5>
+        <h6>I prefer a night in over a night out.</h6>
+        <select class="form-control" id="q6">
+          <option value="empty">Choose an option</option>
           <option value="1">1 (Strongly Disagree)</option>
           <option value="2">2</option>
           <option value="3">3</option>
@@ -103,10 +107,10 @@
           <option value="5">5 (Strongly Agree)</option>
         </select>
 
-        <h3><strong>Question 7</strong></h3>
-        <h4>Hiding the truth to prevent hurting someone is acceptable.</h4>
-        <select class="chosen-select" id="q7">
-          <option value="empty"></option>
+        <h5><strong>Question 7</strong></h5>
+        <h6>Hiding the truth to prevent hurting someone is acceptable.</h6>
+        <select class="form-control" id="q7">
+          <option value="empty">Choose an option</option>
           <option value="1">1 (Strongly Disagree)</option>
           <option value="2">2</option>
           <option value="3">3</option>
@@ -114,10 +118,10 @@
           <option value="5">5 (Strongly Agree)</option>
         </select>
 
-        <h3><strong>Question 8</strong></h3>
-        <h4>It's more important to always brush your teeth at least 2x a day.</h4>
-        <select class="chosen-select" id="q8">
-          <option value="empty"></option>
+        <h5><strong>Question 8</strong></h5>
+        <h6>It's more important to always brush your teeth at least 2x a day.</h6>
+        <select class="form-control" id="q8">
+          <option value="empty">Choose an option</option>
           <option value="1">1 (Strongly Disagree)</option>
           <option value="2">2</option>
           <option value="3">3</option>
@@ -125,10 +129,10 @@
           <option value="5">5 (Strongly Agree)</option>
         </select>
 
-        <h3><strong>Question 9</strong></h3>
-        <h4>If it's not nice, don't say it at all!</h4>
-        <select class="chosen-select" id="q9">
-          <option value="empty"></option>
+        <h5><strong>Question 9</strong></h5>
+        <h6>If it's not nice, don't say it at all!</h6>
+        <select class="form-control" id="q9">
+          <option value="empty">Choose an option</option>
           <option value="1">1 (Strongly Disagree)</option>
           <option value="2">2</option>
           <option value="3">3</option>
@@ -136,16 +140,17 @@
           <option value="5">5 (Strongly Agree)</option>
         </select>
 
-        <h3><strong>Question 10</strong></h3>
-        <h4>I like to travel.</h4>
-        <select class="chosen-select" id="q10">
-          <option value="empty"></option>
+        <h5><strong>Question 10</strong></h5>
+        <h6>I like to travel.</h6>
+        <select class="form-control" id="q10">
+          <option value="empty">Choose an option</option>
           <option value="1">1 (Strongly Disagree)</option>
           <option value="2">2</option>
           <option value="3">3</option>
           <option value="4">4</option>
           <option value="5">5 (Strongly Agree)</option>
         </select>
+        </div>
 
         <br>
         <br>
@@ -165,6 +170,7 @@
                     <div class="modal-body">
                     <h2 id="friendName"></h2>
                     <img id="friendPhoto" src="#" alt="" width = 250px>
+                    <h6 id="friendBio"></h6>
                     </div>
                     <div class="modal-footer">
                     <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
@@ -179,6 +185,9 @@
                 <p><a href="/api/friends">API Friends List</a> | <a href="https://github.com/jnieves14/FriendFinder">GitHub Repo</a></p>
             </div>
         </footer>
+
+    </div>
+    </div>
     </div>
     
 
@@ -222,6 +231,7 @@ $(document).ready(function() {
             $.post(url + "/api/friends", newFriend, function(data) {
                 $("#friendName").text(data.name);
                 $("#friendPhoto").attr("src", data.photo);
+                $("#friendBio").text(data.message);
                 $("#friendResults-modal").modal("toggle");
             });
 
