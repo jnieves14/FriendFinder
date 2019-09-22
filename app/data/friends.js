@@ -3,13 +3,13 @@ var friends = [
 		name: "Tony",
 		photo: "https://www.thewrap.com/wp-content/uploads/2017/07/Robert-Downey-Jr-Iron-Man-Pepper-Potts-Tony-Stark.jpg",
 		scores: [2, 1, 4, 5, 1, 3, 2, 5, 2, 1],
-		message: "He's complicated, a little self-absorbed, and sometimes moody. Tony is perceptive enough to identify his shortcomings and find people to shore up his weaknesses"
+		message: "He's complicated, a little self-absorbed, and sometimes moody. Tony is perceptive enough to identify his shortcomings and find people to shore up his weaknesses."
 	},
 	{
 		name: "Steve",
 		photo: "https://66.media.tumblr.com/fa226c7440dcb6078cf382cec4068b44/tumblr_p84q7wSj8P1tk2oito3_250.png",
 		scores: [2, 4, 5, 1, 2, 2, 3, 5, 3, 3],
-		message: "Steve is a good man, but one who often feels pressure to be the unstoppable soldier everyone wants him to be, and the two things don't always fit together.  Steve believes in doing the right thing above all else"
+		message: "Steve is a good man, but one who often feels pressure to be the unstoppable soldier everyone wants him to be, and the two things don't always fit together.  Steve believes in doing the right thing above all else."
 	},
 	{
 		name: "Diana",
