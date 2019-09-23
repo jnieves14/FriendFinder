@@ -5,6 +5,7 @@ var path = require("path");
 var app = express();
 var PORT = process.env.PORT || 8080;
 
+// css middleware"
 // app.use(express.static(path.join(__dirname + "/app/css")));
 app.use(express.static("app/public"));
 
